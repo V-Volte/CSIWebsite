@@ -1,0 +1,57 @@
+.Navbar {
+    // background-color: #eeeeee11;
+    * {
+        font-size: 1.5rem;
+    }
+}
+
+.NavLogo {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    .LogoImage {
+        margin-right: 2vw;
+        margin-top: 1vh;
+    }
+    .CSIText {
+        color: #3E7DDB;
+        font-weight: 800;
+        font-size: 4.5rem;
+        display: inline;
+        margin-top: -1vh;
+        .mrits {
+            font-size: inherit;
+            font-weight: 300;
+            color: #945527 !important;
+            display: inline;
+        }
+    }
+    .subtext {
+        margin-top: -0.5vh;
+        color: #3E7DDB;
+        font-weight: 600;
+    }
+    .logotext {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: #555;
+    }
+}
+
+.NavbarContent {
+    padding: 2vh 5vw;
+    display: flex;
+    justify-content: space-between;
+    height: inherit;
+    align-items: center;
+}
+
+.NavItems {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: inherit;
+    width: 30vw;
+}

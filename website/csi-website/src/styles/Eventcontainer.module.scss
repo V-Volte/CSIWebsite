@@ -1,0 +1,83 @@
+$cardColor: #004170;
+$cardForeColor: #eee;
+.Eventcontainer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5vw;
+    padding: 2.5vh 7.5vw;
+    // height: 50vh;
+    .EventcontainerInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        justify-content: space-between;
+        align-items: baseline;
+        //border: 2px solid;
+        background-color: $cardColor;
+        color: $cardForeColor;
+        border-radius: 10px;
+        padding: 5vh 2vw;
+        font-size: 1.75rem;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-weight: 300;
+            line-height: 90%;
+            li {
+                padding: 0.5vh 0;
+            }
+        }
+        h1 {
+            margin-bottom: -0vh;
+        }
+        h4 {
+            font-size: 2rem;
+            margin: 0;
+            font-weight: 400;
+            padding: 0;
+        }
+        h2 {
+            font-size: 2.5rem;
+            margin: 0;
+            font-weight: 400;
+            padding: 0;
+        }
+    }
+    .EventcontainerImage {
+        //border: 2px solid white;
+        border-radius: 20px;
+        box-shadow: -20px -20px 150px #444444;
+        .Image {
+            border-radius: inherit;
+            width: inherit;
+            height: inherit;
+            object-fit: fill;
+            // object-fit: cover;
+            // position: fixed;
+        }
+        .Wrapdiv {
+            position: relative;
+            height: inherit;
+        }
+    }
+    .RegisterButton {
+        font-family: inherit;
+        font-size: 1.5rem;
+        padding: 1vh 1vw;
+        font-weight: 500;
+        border: none;
+        border-radius: 10px;
+        background-color: #aaaa;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            box-shadow: 1px 5px 25px 5px #0007;
+        }
+    }
+}
+
+@media(prefers-color-scheme: dark) {
+    $cardForeColor: #ddd000;
+}
